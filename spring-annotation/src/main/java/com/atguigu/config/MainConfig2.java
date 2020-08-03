@@ -21,7 +21,7 @@ public class MainConfig2 {
     //默认是单实例的
 
     /**
-     * ConfigurableBeanFactory#SCOPE_PROTOTYPE
+     *
      *
      * @return\
      * @Scope:调整作用域 prototype：多实例的：ioc容器启动并不会去调用方法创建对象放在容器中。
@@ -34,6 +34,7 @@ public class MainConfig2 {
      * 懒加载：
      * 单实例bean：默认在容器启动的时候创建对象；
      * 懒加载：容器启动不创建对象。第一次使用(获取)Bean创建对象，并初始化；
+     * @see ConfigurableBeanFactory#SCOPE_PROTOTYPE
      * @see ConfigurableBeanFactory#SCOPE_SINGLETON
      * @see org.springframework web.context.WebApplicationContext#SCOPE_REQUEST  request
      * @see org.springframework web.context.WebApplicationContext#SCOPE_SESSION	 sesssion

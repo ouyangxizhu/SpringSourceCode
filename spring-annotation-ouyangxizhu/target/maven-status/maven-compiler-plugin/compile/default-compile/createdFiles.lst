@@ -1,2 +1,13 @@
+com/ouyangxizhu/MainTestComponentScan.class
+com/ouyangxizhu/config/MyTypeFilter.class
+com/ouyangxizhu/MainTestConfigurationBean.class
+com/ouyangxizhu/config/MainConfigScope.class
+com/ouyangxizhu/service/BookService.class
+com/ouyangxizhu/dao/BookDao.class
 com/ouyangxizhu/bean/Person.class
+com/ouyangxizhu/config/MainConfigComponentScan.class
+com/ouyangxizhu/controller/BookController.class
+com/ouyangxizhu/TestTyper.class
+com/ouyangxizhu/config/MainConfigConfigurationBean.class
 com/ouyangxizhu/MainTest.class
+com/ouyangxizhu/MainTestScope.class
