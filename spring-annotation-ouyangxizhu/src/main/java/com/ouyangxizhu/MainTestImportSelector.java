@@ -1,11 +1,10 @@
 package com.ouyangxizhu;
 
-import com.ouyangxizhu.config.MainConfigImport;
 import com.ouyangxizhu.config.MainConfigImportSelector;
-import com.ouyangxizhu.utils.PrintBeanDefinitionNames;
+import com.ouyangxizhu.utils.PrintBeanDefinitionNamesUtils;
 
 public class MainTestImportSelector {
     public static void main(String[] args) {
-        PrintBeanDefinitionNames.printBeanNames(MainConfigImportSelector.class);
+        PrintBeanDefinitionNamesUtils.printBeanNames(MainConfigImportSelector.class);
     }
 }
