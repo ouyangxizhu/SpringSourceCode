@@ -13,8 +13,23 @@ public class BookService {
 //    @Qualifier("bookDao")
 //    @Autowired(required = false)
 //    @Resource
-    @Inject
+//    @Inject
     private BookDao bookDao;
+
+//    @Autowired
+    public BookService(BookDao bookDao) {
+        System.out.println("bookService.......有参构造器");
+        this.bookDao = bookDao;
+    }
+
+    public BookDao getBookDao() {
+        return bookDao;
+    }
+
+//    @Autowired
+    public void setBookDao(BookDao bookDao) {
+        this.bookDao = bookDao;
+    }
 
     @Override
     public String toString() {
