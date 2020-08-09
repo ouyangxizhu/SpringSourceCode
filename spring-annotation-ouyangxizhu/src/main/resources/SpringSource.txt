@@ -30,7 +30,7 @@ Spring容器的refresh()【创建刷新】;
 	BeanFactoryPostProcessor：BeanFactory的后置处理器。在BeanFactory标准初始化之后执行的；
 	两个接口：BeanFactoryPostProcessor、BeanDefinitionRegistryPostProcessor
 	1）、执行BeanFactoryPostProcessor的方法；
-		先执行BeanDefinitionRegistryPostProcessor
+		先执行BeanDefinitionRegistryPostProcessor(在这个类中解析@Configuration，@Import，@ComponentScan，等自动配置注解)
 		1）、获取所有的BeanDefinitionRegistryPostProcessor；
 		2）、看先执行实现了PriorityOrdered优先级接口的BeanDefinitionRegistryPostProcessor、
 			postProcessor.postProcessBeanDefinitionRegistry(registry)
